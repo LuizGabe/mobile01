@@ -6,13 +6,12 @@ import {
   Image, 
   TouchableOpacity,
   TextInput
-
 } from 'react-native';
-import { styles } from "../styles/styles";
-import Tela2 from '../pages/App1'
+import { styles } from "./styles/styles"
+import { styles1 } from "./styles/styles1"
 
 const App = () => {
-  if (false) {
+  if (true) {
     return (
       <ScrollView style={styles.scrollView}>
           <View style={styles.container}>
@@ -57,10 +56,19 @@ const App = () => {
     );
   } else {
     return (
-      <Tela2/>
+      <View style={styles1.container}>
+        <Text style={styles1.title}>Minha jornada no React Native </Text> <br/>
+        <Text style={styles1.buttonGreen}> Fundamentos do React Native</Text> <br/>
+        <Text style={styles1.buttonGreen}> Expo e Expo CLI</Text> <br/>
+        <Text style={styles1.buttonGreen}> Estilização com StyleSheet</Text> <br/>
+        <Text style={styles1.buttonRed}> Navegação</Text> <br/>
+        <Text style={styles1.buttonRed}> ScrollView e FlatList</Text> <br/>
+        <Text style={styles1.buttonRed}> Periféricos</Text> <br/>
+        <Text style={styles1.buttonRed}> Styled Components</Text> <br/>
+        <StatusBar style="auto" />
+      </View>
     );
   }
-  
 }
 
 export default App
